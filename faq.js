@@ -5,11 +5,20 @@ document.querySelectorAll('.toggle-btn').forEach(button => {
         const faqItem = button.closest('.faq-item'); // Get the parent FAQ item
         const answer = faqItem.querySelector('.answer'); // Get the answer section within the item
 
-        // Toggle the display of the answer
-        if (answer.style.display === 'block') {
-            answer.style.display = 'none'; // Hide the answer
+        if (faqItem.classList.contains('active')) {
+            // Close the answer with smooth transition
+            answer.style.height = `${answer.scrollHeight}px`; // Set current height for animation
+            setTimeout(() => {
+                answer.style.height = '0'; // Shrink to 0 height
+            }, 10); // Delay for smoother transition start
+            faqItem.classList.remove('active'); // Remove active state after transition
         } else {
-            answer.style.display = 'block'; // Show the answer
+            // Open the answer with smooth transition
+            faqItem.classList.add('active'); // Add active state
+            answer.style.height = `${answer.scrollHeight}px`; // Expand to full content height
+            setTimeout(() => {
+                answer.style.height = 'auto'; // Reset height to auto for flexibility
+            }, 300); 
         }
     });
 });
