@@ -113,7 +113,7 @@
   
   
   main {
-    padding: 10rem;
+    padding: 5rem;
     background-color: #000000;
   }
   
@@ -177,8 +177,8 @@
     letter-spacing: 1px;
 }
 .icon {
-    width: 45px;  /* Set a fixed size for the icon */
-    height: 45px; /* Set a fixed size for the icon */
+    width: 50px;  /* Set a fixed size for the icon */
+    height: 50px; /* Set a fixed size for the icon */
     border-radius: 50%; /* Makes the icon container circular */
     padding: 10px; /* Space around the icon */
     display: flex;
@@ -198,8 +198,8 @@
     color: #000;
     border: none;
     font-size: 18px;
-    width: 25px;
-    height: 25px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     cursor: pointer;
     transition: transform 0.3s ease;
@@ -213,7 +213,7 @@
 .answer {
     display: none;
     margin-top: 10px;
-    color: whitesmoke;
+    color: white;
     font-size: 1.2rem;
     border-left: 3px ;
 }
