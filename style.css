@@ -593,7 +593,6 @@ strong {
   }
 
   .what-we-do li {
-    width: ;
     font-size: 1rem;
     margin-bottom: 0.7rem;
   }
@@ -601,7 +600,28 @@ strong {
   .what-we-do .content {
     text-align: center;
   }
-
+  .our-values {
+    margin-top: 1rem;
+    padding: 1rem 1rem;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+    height: auto;
+  }
+  
+  .our-values h1 {  
+    font-size: 2.5rem;
+  }
+  
+  .our-values p{
+    font-size: 1rem;
+    text-align: left;
+  }
+  .our-values traits {
+    width: 3rem;
+    height: 3rem;
+    text-align: center;
+  }
 
   .icons {
     flex-direction: row;
