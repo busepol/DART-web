@@ -234,9 +234,11 @@
 }
 .faq-item.active .answer {
     display: block;
+    transition: height 300ms ease, opacity 300ms ease;
 }
 
 .faq-item.active .toggle-btn {
+    transition: height 300ms ease, opacity 300ms ease;
     transform: rotate(45deg); /* Rotate the button when active */
 }
 
