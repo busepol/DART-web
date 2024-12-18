@@ -327,6 +327,7 @@
 
 
   .faq-container {
+    flex-direction: column;
     max-width: 2000px;
     margin: 10px 10px;
     margin-left: 1rem; 
@@ -358,7 +359,8 @@
 
 /* Rows */
 .faq-row {
-    margin-bottom: 20px;
+  flex-direction: column;
+  margin-bottom: 20px;
 }
 
 /* Individual Questions */
