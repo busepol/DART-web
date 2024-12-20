@@ -191,10 +191,10 @@ main {
 }
 
 .section img {
+  mix-blend-mode: hard-light;
   max-width: 320px;
   height: auto;
   object-fit: contain;
-  mix-blend-mode: hard-light;
   padding: 10px;
   border-radius: 5px;
 }
@@ -471,12 +471,11 @@ strong {
     font-size: 0.6rem;
     text-align: left;
   }
-  .our-values traits {
-    width: 3rem;
-    height: 3rem;
+
+  .our-values .traits {
+    font-size: 0.6rem;
     text-align: center;
   }
-
 
   .icons {
     flex-direction: row;
@@ -651,9 +650,8 @@ strong {
     font-size: 1rem;
     text-align: left;
   }
-  .our-values traits {
-    width: 3rem;
-    height: 3rem;
+  .our-values .traits {
+    font-size: 1rem;
     text-align: center;
   }
 
