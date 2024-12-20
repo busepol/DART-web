@@ -12,6 +12,27 @@ body{
   font-weight: 600;
   
 }
+
+.progress-container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 10px;
+  height: 100%;
+  background-color: #e0e0e0; /* Light gray background */
+  z-index: 9999; /* Ensure it's on top of everything */
+  border-radius: 5px; 
+}
+
+
+.progress-bar {
+  height: 0%;
+  width: 100%;
+  background-color: #007bff; /* Blue color */
+  transition: width 0.2s ease; /* Smooth update */
+  border-radius: 5px; 
+}
+
 .top{
   background-repeat: no-repeat;
   background-size: cover;
@@ -109,6 +130,19 @@ body{
 
 .sidebar.open {
   right: 0; 
+}
+
+.fade-in {
+  opacity: 0;
+  transform: scale(0.8); /* Start smaller */
+  filter: blur(5px); /* Start with a blur effect */
+  transition: transform 0.5s ease-out, opacity 0.5s ease-out, filter 0.5s ease-out;
+}
+
+.fade-in.animate {
+  opacity: 1;
+  transform: scale(1); /* End at full size */
+  filter: blur(0); /* End without blur */
 }
 
 
@@ -245,11 +279,10 @@ strong {
 
 .our-values p{
   font-size: 1.5rem;
-  text-align: left;
+  text-align: lefft;
 }
-.our-values traits {
-  width: 4rem;
-  height: 4rem;
+.our-values .traits {
+  font-size: 1.5rem;
   text-align: center;
 }
 
