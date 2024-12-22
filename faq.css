@@ -119,14 +119,13 @@
   .fade-in {
     opacity: 0;
     transform: translateX(100%); /* Start from the right */
-    transition: transform 1.2s ease-out, opacity 1.2s ease-out;
+    transition: transform 1s ease-out, opacity 1s ease-out;
 }
 
 .fade-in.animate {
     opacity: 1;
     transform: translateX(0); /* End at its original position */
 }
-
 
   .faq-container {
     max-width: 5000px;
@@ -394,8 +393,9 @@
 }
 
 .question h2 {
+    line-height: 1.8rem;
     color:white;
-    font-size: 0.9rem;
+    font-size: 1rem;
     margin: 0;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -431,10 +431,11 @@
 
 /* Answers Hidden by Default */
 .answer {
+    line-height: 1.5rem;
     display: none;
     margin-top: 10px;
     color: white;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     border-left: 3px ;
 }
 .ending {
@@ -588,7 +589,8 @@
 
 .question h2 {
     color:white;
-    font-size: 1rem;
+    line-height: 2.1rem;
+    font-size: 1.2rem;
     margin: 0;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -627,7 +629,7 @@
     display: none;
     margin-top: 10px;
     color: white;
-    font-size: 0.9rem;
+    font-size: 1rem;
     border-left: 3px ;
 }
 .ending {
