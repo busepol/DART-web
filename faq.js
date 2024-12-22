@@ -1,3 +1,28 @@
+const animationElements = document.querySelectorAll('.fade-in');
+
+const observer = new IntersectionObserver(
+    (entries) => {
+        entries.forEach((entry, index) => {
+            if (entry.isIntersecting) {
+                setTimeout(() => {
+                    entry.target.classList.add('animate');
+                }, index * 100);
+            } else {
+                entry.target.classList.remove('animate'); // Optional: Remove animation if you want
+            }
+        });
+    },
+    {
+        threshold: 0.1 // Adjust as needed (0.1 means 10% visibility triggers the animation)
+    }
+);
+
+// Observe each element
+animationElements.forEach((el) => {
+    observer.observe(el);
+});
+
+
 // Function to toggle the answer visibility when the icon is clicked
 document.querySelectorAll('.toggle-btn').forEach(button => {
     button.addEventListener('click', function() {
@@ -46,3 +71,4 @@ body.addEventListener('click', function(event) {
     event.stopPropagation(); 
 
 });
+
