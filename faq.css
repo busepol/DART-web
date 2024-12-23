@@ -155,6 +155,9 @@
   .spacer1 {
     margin: 70px;
   }
+  strong {
+    color:#FFCC6D;
+  }  
 
 .faq-row {
     display: flex; 
