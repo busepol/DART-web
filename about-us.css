@@ -346,13 +346,14 @@ strong {
   }
 
   main {
-    padding: 1.1rem; /* Further reduce padding */
+    padding: 1.5rem; /* Further reduce padding */
   }
 
   .section {
     flex-direction: row;
     margin-top: 0;
-    padding: 20px 20px;
+    padding: 15px 15px;
+    gap: 0.5rem;
   }
 
   .section h1 {
@@ -362,8 +363,8 @@ strong {
 
   .section p {
     font-size: 0.6rem;
-    line-height: 1;
-    max-width: 100%;
+    line-height: 0.8rem;
+    max-width: 110%;
     text-align: left;
     margin-bottom: 1rem;
   }
@@ -373,19 +374,19 @@ strong {
 }
 
   .section img {
-    max-width: 32%;
+    max-width: 37%;
     margin: 0 auto;
   }
 
   .line img {
     margin-left: 20px;
     width: 88%; /* Further shrink line */
-    margin-top: 75px;
+    margin-top: 78px;
   }
 
   .what-we-do {
     flex-direction: row;
-    padding: 20px 20px;
+    padding: 15px 15px;
     background-size: contain;
     height: auto;
     margin-top: 1.5rem;
@@ -398,10 +399,10 @@ strong {
   }
 
   .about-paragraph {
+    margin-left: 15px;
     margin-bottom: 2px;
     font-size: 0.6rem;
     width: 200%;
-    line-height: 1;
     text-align: left;
   }
 
@@ -423,11 +424,12 @@ strong {
 
   .our-values {
     margin-top: 1rem;
-    padding: 20px 20px;
-    gap: 2rem;
+    padding: 15px 15px;
+    gap: 2.5rem;
   }
   
   .our-values h1 {  
+    margin-left: 15px;
     font-size: 1.5rem;
   }
   
@@ -474,18 +476,19 @@ strong {
   }
 }
 
-@media (min-width: 769px) and (max-width: 1366px){
+@media (min-width: 768px) and (max-width: 1366px) and (orientation:landscape){
   body {
-    font-size: 80%; /* Slightly smaller font size */
+    font-size: 70%; /* Further reduce font size for smaller screens */
   }
+
   .overlay {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); 
-    backdrop-filter: blur(3px); 
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+    backdrop-filter: blur(3px); /* Lighter blur */
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.3s ease, visibility 0.3s ease;
@@ -498,27 +501,27 @@ strong {
   }
 
   .top {
-    background-attachment: fixed;
+      background-attachment: fixed;
   }
 
   .navbar {
-    padding-left: 1.5rem;
-    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    padding-bottom: 0rem;
   }
 
   .navbar .left {
-      padding-top: 0.8rem;
+      padding-top: 0.5rem;
   }
 
   .navbar .left img {
-    width: 70px; /* Smaller logo size */
-    height: 70px;
+    width: 55px; /* Smaller logo size */
+    height: 55px;
   }
 
   .navbar a {
     display: none;
   }
-
+  
   main {
     padding: 4rem 4rem; 
   }
@@ -526,18 +529,19 @@ strong {
   .section {
     flex-direction: row;
     justify-content: space-between;
+    gap: 5rem;
     margin-top: -40px;
-    padding: 25px 25px;
+    padding: 30px 30px;
   }
 
   .section h1 {
-    padding-right: 40px;
-    font-size: 2.3rem; /* Further reduce heading size */
+    padding-left: 30px;
+    font-size: 2.5rem; /* Further reduce heading size */
     text-align: center;
   }
 
   .section p {
-    padding-left: 40px;
+    padding-right: 30px;
     font-size: 1rem;
     line-height: 1.3;
     max-width: 90%;
@@ -549,21 +553,21 @@ strong {
 }
 
   .section img {
-    max-width: 30%;
+    max-width: 23%;
   }
 
   .line img {
     width: 90%; /* Further shrink line */
-    margin-top: 68px;
-    margin-left: 25px;
+    margin-top: 62px;
+    margin-left: 30px;
   }
 
   .what-we-do {
     flex-direction: row;
-    padding: 25px 25px;
+    padding: 30px 30px;
     background-size: contain;
     height: 500px;
-    margin-top: -30px;
+    margin-top: 1px;
   }
 
   .what-we-do h1 {
@@ -572,6 +576,7 @@ strong {
   }
 
   .about-paragraph {
+    margin-left: 30px;
     margin-bottom: 2px;
     font-size: 1rem;
     width: 200%;
@@ -581,7 +586,7 @@ strong {
 
   .what-we-do ul {
     width: 300%;
-    padding-left: 1.5rem;
+    padding-left: 3rem;
     margin-bottom: 0.7rem;
     font-size: 1rem
   }
@@ -596,7 +601,186 @@ strong {
   }
   .our-values {
     margin-top: 1rem;
-    padding: 30px 25px;
+    padding: 30px 30px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10rem;
+    height: auto;
+  }
+  
+  .our-values h1 {  
+    margin-left: 30px;
+    font-size: 2.5rem;
+  }
+  
+  .our-values p{
+    margin-right: 30px;
+    font-size: 1rem;
+    text-align: left;
+  }
+  .our-values .traits {
+    font-size: 1rem;
+    text-align: left;
+  }
+
+  .icons {
+    flex-direction: row;
+    gap: 6rem;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+  }
+
+  .icons img {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .copyright {
+    font-size: 0.9rem;
+    text-align: center;
+    padding: 0.5rem 1rem;
+  }
+
+  .menu-button {
+    display: block;
+  }
+
+  .sidebar {
+    display: flex;
+    width: 12rem; /* Moderate sidebar width */
+  }
+
+  .sidebar.open {
+    right: 0;
+  }
+}
+@media (min-width: 768px) and (max-width: 1366px) and (orientation:portrait){
+  body {
+    font-size: 70%; /* Further reduce font size for smaller screens */
+  }
+
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+    backdrop-filter: blur(3px); /* Lighter blur */
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 9;
+  }
+
+  .overlay.visible {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .top {
+      background-attachment: fixed;
+  }
+
+  .navbar {
+    padding-left: 1rem;
+    padding-bottom: 0rem;
+  }
+
+  .navbar .left {
+      padding-top: 0.5rem;
+  }
+
+  .navbar .left img {
+    width: 55px; /* Smaller logo size */
+    height: 55px;
+  }
+
+  .navbar a {
+    display: none;
+  }
+  
+  main {
+    padding: 4rem 4rem; 
+  }
+
+  .section {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-top: -40px;
+    padding: 25px 25px;
+  }
+
+  .section h1 {
+    padding-left: 25px;
+    font-size: 2.5rem; /* Further reduce heading size */
+    text-align: center;
+  }
+
+  .section p {
+    padding-right: 25px;
+    font-size: 1rem;
+    line-height: 1.3;
+    max-width: 125%;
+    text-align: left;
+  }
+  
+  .spacer {
+    margin: 12px;
+}
+
+  .section img {
+    max-width: 30%;
+  }
+
+  .line img {
+    width: 100%; /* Further shrink line */
+    margin-top: 68px;
+    margin-left: 25px;
+  }
+
+  .what-we-do {
+    flex-direction: row;
+    padding: 25px 25px;
+    background-size: contain;
+    height: 500px;
+    margin-top: 1px;
+  }
+
+  .what-we-do h1 {
+    margin-left: 70px;
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  .about-paragraph {
+    margin-left: 25px;
+    margin-bottom: 2px;
+    font-size: 1rem;
+    width: 200%;
+    line-height: 1.3;
+    text-align: left;
+  }
+
+  .what-we-do ul {
+    width: 300%;
+    padding-left: 3rem;
+    margin-bottom: 0.7rem;
+    font-size: 1rem
+  }
+
+  .what-we-do li {
+    font-size: 1rem;
+    margin-bottom: 0.7rem;
+  }
+
+  .what-we-do .content {
+    text-align: center;
+  }
+  .our-values {
+    margin-top: 1rem;
+    padding: 25px 25px;
     justify-content: space-between;
     align-items: center;
     gap: 4rem;
@@ -604,16 +788,18 @@ strong {
   }
   
   .our-values h1 {  
+    margin-left: 25px;
     font-size: 2.5rem;
   }
   
   .our-values p{
+    margin-right: 25px;
     font-size: 1rem;
     text-align: left;
   }
   .our-values .traits {
     font-size: 1rem;
-    text-align: center;
+    text-align: left;
   }
 
   .icons {
