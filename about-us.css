@@ -13,26 +13,6 @@ body{
   
 }
 
-.progress-container {
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: 10px;
-  height: 100%;
-  background-color: #e0e0e0; /* Light gray background */
-  z-index: 9999; /* Ensure it's on top of everything */
-  border-radius: 5px; 
-}
-
-
-.progress-bar {
-  height: 0%;
-  width: 100%;
-  background-color: #007bff; /* Blue color */
-  transition: width 0.2s ease; /* Smooth update */
-  border-radius: 5px; 
-}
-
 .top{
   background-repeat: no-repeat;
   background-size: cover;
@@ -127,7 +107,6 @@ body{
   color: #FFCC6D;
 }
 
-
 .sidebar.open {
   right: 0; 
 }
@@ -136,7 +115,7 @@ body{
   opacity: 0;
   transform: scale(0.8); /* Start smaller */
   filter: blur(5px); /* Start with a blur effect */
-  transition: transform 0.5s ease-out, opacity 0.5s ease-out, filter 0.5s ease-out;
+  transition: transform 1s ease-out, opacity 1s ease-out, filter 1s ease-out;
 }
 
 .fade-in.animate {
@@ -201,17 +180,14 @@ main {
 
   /* Line */
 .line {
-  display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: -90px;
-  padding: 0;
+  margin-top: -102px;
 }
   
 .line img {
-  width: 90%;
-  max-height: 7px;
-  object-fit: contain;
+  width: 100%;
+  object-fit:cover;
 }
 
 strong {
@@ -370,13 +346,13 @@ strong {
   }
 
   main {
-    padding: 2rem; /* Further reduce padding */
+    padding: 1.1rem; /* Further reduce padding */
   }
 
   .section {
     flex-direction: row;
     margin-top: 0;
-    padding: 3.5rem 1rem;
+    padding: 20px 20px;
   }
 
   .section h1 {
@@ -399,17 +375,17 @@ strong {
   .section img {
     max-width: 32%;
     margin: 0 auto;
-    padding: 8px;
   }
 
   .line img {
+    margin-left: 20px;
     width: 88%; /* Further shrink line */
-    margin-top: 25.5px;
+    margin-top: 75px;
   }
 
   .what-we-do {
     flex-direction: row;
-    padding: 1rem 1rem;
+    padding: 20px 20px;
     background-size: contain;
     height: auto;
     margin-top: 1.5rem;
@@ -418,7 +394,6 @@ strong {
   .what-we-do h1 {
     font-size: 1.5rem;
     margin: 0;
-    padding-left: 7rem;
     text-align: center;
   }
 
@@ -446,35 +421,25 @@ strong {
     text-align: center;
   }
 
-
-
   .our-values {
     margin-top: 1rem;
-    color: white;
-    display: flex;
-    flex-direction: row;
-    padding: 1rem 1rem;
-    justify-content: space-between;
-    align-items: center;
+    padding: 20px 20px;
     gap: 2rem;
-    height: auto;
   }
   
   .our-values h1 {  
     font-size: 1.5rem;
-    color: #ffcc6d;
-    flex: 1;
-  
   }
   
   .our-values p{
+    margin-right: 20px;
     font-size: 0.6rem;
     text-align: left;
   }
 
   .our-values .traits {
     font-size: 0.6rem;
-    text-align: center;
+    text-align: left;
   }
 
   .icons {
@@ -509,7 +474,7 @@ strong {
   }
 }
 
-@media (min-width: 769px) and (max-width: 1180px){
+@media (min-width: 769px) and (max-width: 1366px){
   body {
     font-size: 80%; /* Slightly smaller font size */
   }
@@ -562,7 +527,7 @@ strong {
     flex-direction: row;
     justify-content: space-between;
     margin-top: -40px;
-    padding: 20px 20px;
+    padding: 25px 25px;
   }
 
   .section h1 {
@@ -584,20 +549,18 @@ strong {
 }
 
   .section img {
-    max-width: 32%;
-    padding: 8px 8px;
+    max-width: 30%;
   }
 
   .line img {
     width: 90%; /* Further shrink line */
-    margin-top: 63px;
+    margin-top: 68px;
+    margin-left: 25px;
   }
-
-
 
   .what-we-do {
     flex-direction: row;
-    padding: 1rem 1rem;
+    padding: 25px 25px;
     background-size: contain;
     height: 500px;
     margin-top: -30px;
@@ -605,8 +568,6 @@ strong {
 
   .what-we-do h1 {
     font-size: 2.5rem;
-    margin: 0;
-    padding-left: 7rem;
     text-align: center;
   }
 
@@ -635,10 +596,10 @@ strong {
   }
   .our-values {
     margin-top: 1rem;
-    padding: 1rem 1rem;
+    padding: 30px 25px;
     justify-content: space-between;
     align-items: center;
-    gap: 3rem;
+    gap: 4rem;
     height: auto;
   }
   
